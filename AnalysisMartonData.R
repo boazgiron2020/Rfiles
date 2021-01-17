@@ -3,7 +3,6 @@ str(ListOfTest)
 
 AllNewTest  = ListOfTest[as.POSIXct(ListOfTest$ResultTime, format = "%Y-%M-%d %H") > t050115 , ]
 
-
 dim(AllNewTest)
 errors = ListOfTest[ListOfTest$Success == 0,]
 
